@@ -1,0 +1,380 @@
+body{
+    background: url("../imgs/main-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-size: 10px;
+    display: grid;
+    justify-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pink {
+    background-color: plum;
+    width: 65%;
+}
+
+#titleBattle{
+    padding-top: 5%;
+}
+
+main {
+    width: 100%;
+}
+
+
+/*  -------------------------------------------- ******** ----------------------------------------- */
+/*  ------------------------------------------- NAV-BUTTONS --------------------------------------- */
+/*  -------------------------------------------- ******** ----------------------------------------- */
+
+
+#menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+#menu li {
+    padding: 0 15px;
+}
+
+
+/*  -------------------------------------------- ******** ----------------------------------------- */
+/*  ------------------------------------------ STATS-JUGADOR -------------------------------------- */
+/*  -------------------------------------------- ******** ----------------------------------------- */
+
+
+#stats {
+    display: flex;
+    height: 40px;
+}
+
+#hp {
+    width: 30%;
+    text-align: center;
+}
+
+#hp i{
+    transform: scale(2);
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0 7%;
+}
+
+.progress-bar {
+    width: 35%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar progress {
+    width: 50%;
+    height: 20px;
+}
+
+.progress-bar img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+/*  -------------------------------------------- ******** ----------------------------------------- */
+/*  -------------------------------------------- BRÚJULA ------------------------------------------ */
+/*  -------------------------------------------- ******** ----------------------------------------- */
+
+
+.brujula {
+    display: none;
+    float: right;
+    margin-right: 17%;
+}
+
+.brujula img{
+    position: absolute;
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+
+/*  -------------------------------------------- ******** ----------------------------------------- */
+/*  -------------------------------------------- MINIMAPA ----------------------------------------- */
+/*  -------------------------------------------- ******** ----------------------------------------- */
+
+
+.minimap{
+    display: none;
+    position: absolute;
+}
+
+.minimap canvas{
+    background-color: #FFF;
+    border: solid 1px plum;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+
+/*  -------------------------------------------- ******** ----------------------------------------- */
+/*  --------------------------------------------- VISOR ------------------------------------------- */
+/*  -------------------------------------------- ******** ----------------------------------------- */
+
+
+#gameBackground {
+    width: 100%;
+    height: 600px;
+}
+
+#enemigo{
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    margin-top: 75px;
+}
+
+
+/*  -------------------------------------------- ******** ----------------------------------------- */
+/*  --------------------------------------------- FOOTER ------------------------------------------ */
+/*  -------------------------------------------- ******** ----------------------------------------- */
+
+
+#info{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedores-info{
+    width: 20%;
+}
+
+#controles{
+    font-size: 8px;
+}
+
+#visor{
+    width: 40%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+#object .title{
+    font-size: 12px;
+}
+
+#player-info .title{
+    font-size: 12px;
+}
+
+#controles .title{
+    font-size: 12px;
+}
+
+#visor .title{
+    font-size: 12px;
+}
+
+/*  ----------------------------------------- OBJETO  ----------------------------------------- */
+
+#object-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+#info-objecte{
+    display: flex;
+    flex-direction: row;
+}
+
+#object-img{
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+}
+
+.btn-object{
+    margin-top: 10px;
+}
+
+#select-obj {
+    background-color:#212529; 
+    padding: 1rem 1.2rem 1rem 1rem;
+    width:calc(100% + 8px);
+}
+
+#select-obj label {
+    color:#fff;
+}
+
+/*  --------------------------------------- INFO-PLAYER  --------------------------------------- */
+
+#info-datos{
+    display: flex;
+    justify-content: center;
+}
+
+#player-img{
+    float: left;
+    width: 60px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+/*  ------------------------------------------ KEYS  ------------------------------------------ */
+
+#teclas-moverAP{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#tecla-mover img{
+    width: 100px;
+}
+
+#teclas-AP{
+    margin-left: 8px;
+}
+
+#teclas-AP img{
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+#tecla-space img{
+    border-radius: 5px;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+/*  ------------------------------------------ TERMINAL  ------------------------------------------ */
+
+.terminal {
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 5px;
+    padding-top: 2px;
+    overflow: auto;
+    width: 100%;
+    height: 160px;
+    color: ghostwhite;
+    background-color: black;
+    word-wrap: break-word;
+    font-size: 12px;
+}
+
+
+/*  -------------------------------------------- ******** ----------------------------------------- */
+/*  ----------------------------------------   ATTACK EFECT  -------------------------------------- */
+/*  -------------------------------------------- ******** ----------------------------------------- */
+
+
+  .mo-fire {
+    display: block;
+    width: 250px;
+    height: auto;
+    position: absolute;
+    left:50%;
+    margin-left: -150px;
+    margin-top: 200px;
+    top: 100px;
+    animation: opacidadFuego 1s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .mo-fire svg {
+    width: 100%;
+    height: auto;
+    position: relative
+  }
+
+  .flame {
+    animation-name: flamefly;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    transform-origin: 50% 50% 0;
+  }
+  .flame.one {
+    animation-delay: 1s;
+    animation-duration: 1s;
+  }
+  .flame3.two{
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  
+  .flame-main {
+    animation-name: flameWobble;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .flame-main.one {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .flame-main.two {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .flame-main.three {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .flame-main.four {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+  .flame-main.five {
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+
+  @keyframes flameWobble {
+    50% {
+      transform: scale(1,1.2) translate(0, -30px) rotate(-2deg);
+    }
+  }
+
+  @keyframes flamefly {
+    0%{
+      transform: translate(0) rotate(180deg);
+    }
+     50% {
+       opacity: 1;
+    }
+    100% {
+      transform: translate(-20px, -100px) rotate(180deg);
+      opacity: 0;
+    }
+}
+
+@keyframes opacidadFuego {
+    0% {
+      opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
