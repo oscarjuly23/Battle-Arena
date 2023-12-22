@@ -39,3 +39,6 @@ Este proyecto ha representado un desafío para aplicar los conocimientos teóric
 ##
 @authors: Victor Valles - Oscar Julian - Carles Torrubiano  
 @date: 09 de Enero 2021
+
+![image](https://github.com/oscarjuly23/Battle-Arena/assets/39187459/82cc7de7-6d0a-4c29-beab-56e7bcaf06cb)
+
